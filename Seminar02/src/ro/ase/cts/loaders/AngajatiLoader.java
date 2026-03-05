@@ -18,8 +18,8 @@ public class AngajatiLoader extends AplicantiLoader {
         List<Aplicant> angajati = new ArrayList<>();
 
         while (input2.hasNext()) {
-            Angajat angajat =new Angajat();
-            super.loadAplicantData(input2,angajat);
+            Angajat angajat = new Angajat();
+            super.loadAplicantData(input2, angajat);
             int salariu = input2.nextInt();
             String ocupatie = (input2.next()).toString();
             angajat.setSalariu(salariu);

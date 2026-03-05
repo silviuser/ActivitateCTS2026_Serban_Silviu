@@ -20,9 +20,9 @@ public class StudentsLoader extends AplicantiLoader {
         while (input.hasNext()) {
             Student student = new Student();
             super.loadAplicantData(input,student);
-            int an_studii = input.nextInt();
+            int anStudii = input.nextInt();
             String facultate = (input.next()).toString();
-            student.setAn_studii(an_studii);
+            student.setAnStudii(anStudii);
             student.setFacultate(facultate);
             studenti.add(student);
         }
