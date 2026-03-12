@@ -4,7 +4,15 @@ import ro.ase.cts.lazy.Hotel;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Hotel hotel = Hotel.getInstance("Hotel1",2,4);
-        }
+        Hotel hotel1 = Hotel.getInstance("Hotel1",2,4);
+        Hotel hotel2 = Hotel.getInstance("Hotel2",4,4);
+
+        hotel1.afisareInchiriereCamera();
+        hotel1.afisareInchiriereCamera();
+
+        hotel2.afisareInchiriereCamera();
+        hotel2.afisareInchiriereCamera();
+
+
     }
 }
