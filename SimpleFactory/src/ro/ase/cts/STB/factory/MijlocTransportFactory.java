@@ -6,7 +6,15 @@ import ro.ase.cts.STB.vehicule.Tramvai;
 import ro.ase.cts.STB.vehicule.Troleibuz;
 
 public class MijlocTransportFactory {
-    public static MijlocTransport getMijlocTransport(String marca, int linie, MijlocTransportType tip) throws Exception {
+    public static MijlocTransportFactory instance;
+    public static MijlocTransportFactory getInstance(){
+        if(instance == null){
+            instance = new MijlocTransportFactory();
+        }
+        return instance;
+    }
+    private MijlocTransportFactory(){}
+    public MijlocTransport getMijlocTransport(String marca, int linie, MijlocTransportType tip) throws Exception {
         if(tip == MijlocTransportType.TRAMVAI){
             return new Tramvai(marca,linie);
         }

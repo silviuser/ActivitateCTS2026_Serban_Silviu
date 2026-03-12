@@ -15,18 +15,18 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
-//        MijlocTransportFactory factory = new MijlocTransportFactory();
-        MijlocTransport autobuz = MijlocTransportFactory.getMijlocTransport(
+        MijlocTransportFactory factory = MijlocTransportFactory.getInstance();
+        MijlocTransport autobuz = factory.getMijlocTransport(
                 "Mercedes",
                 432,
                 MijlocTransportType.AUTOBUZ
         );
-        MijlocTransport tramvai = MijlocTransportFactory.getMijlocTransport(
+        MijlocTransport tramvai = factory.getMijlocTransport(
                 "Astra",
                 101,
                 MijlocTransportType.TRAMVAI
         );
-        MijlocTransport troleibuz = MijlocTransportFactory.getMijlocTransport(
+        MijlocTransport troleibuz = factory.getMijlocTransport(
                 "Otokar",
                 44,
                 MijlocTransportType.TROLEIBUZ
