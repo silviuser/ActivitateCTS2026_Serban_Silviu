@@ -34,7 +34,8 @@ public class Hotel {
     }
 
     private static Hotel instanta = null;
-    public static Hotel getInstance(String denumire, int nrCamere,int numarAngajati){
+    //synchronized
+    public static synchronized Hotel getInstance(String denumire, int nrCamere,int numarAngajati){
         if(instanta == null){
             instanta = new Hotel(denumire,nrCamere,numarAngajati);
         }
