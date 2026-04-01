@@ -1,4 +1,4 @@
-package ro.ase.cts.STB.prototype;
+package ro.ase.cts.Restaurant.prototype;
 
 public interface IRezervare {
     public IRezervare copiaza();
